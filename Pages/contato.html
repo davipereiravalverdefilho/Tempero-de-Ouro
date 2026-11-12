@@ -1,52 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Tempero de Ouro</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body> 
-    <header> <!--listar de contatos-->
+
+    <header>
         <div>
-            <a hreef="../home.html"> Tempero<span>De Ouro </span> </a>
+            <a href="../home.html">Tempero<span> de Ouro</span></a>
         </div>
         <nav>
-            <a hreef="../home.html"> Início </a>
-            <a hreef="pages/sobre.html"> Sobre </a>
-            <a hreef="pages/cardapio.html"> Cardapio </a>
+            <a href="../home.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+            <a href="cardapio.html">Cardápio</a>
         </nav>
     </header>
 
-        <main>
-            <section> id="containerFormContato"
-                <h1>fala com o Restaurante Tempero de Ouro</h1>
-                <p>Dúvidas,sugestoes ou mal atendimento Fale conosco.</p>
-                <form id="containerFormContato">
-                    <label for="nomeContato">Nome completo</label>
-                    <input id="nomeContato" type="text" required>
-                    <br>
-                    <label for="emailContato">E-mail</label>
-                    <input id="emailContato" type="email" required>
-                    <br>
-                    <label for="mensagemContato">Mensagem</label>
-                    <textarea id="mensagemContato" rows="5" minleight="40"></textarea>
-                    <br>
-                    <button type="submit">Enviar Mensagem</button>
-                </form>
-            </section>
-        </main>
+    <main>
+        <section id="secaoContato">
+            <h1>Fale com o Restaurante Tempero de Ouro</h1>
+            <p>Dúvidas, sugestões ou mau atendimento? Fale conosco.</p>
+            
+            <form id="containerFormContato">
+                <label for="nomeContato">Nome completo</label>
+                <input id="nomeContato" type="text" required>
+                <br>
 
+                <label for="emailContato">E-mail</label>
+                <input id="emailContato" type="email" required>
+                <br>
 
+                <label for="mensagemContato">Mensagem</label>
+                <textarea id="mensagemContato" rows="5" minlength="40" required></textarea>
+                <br>
 
-
-
-
-
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
 
     <footer>   
-        <p> © 2026 EduTech. Todos os direitos reservados. </p>
-        <p> <a  href =" pages/contato.html "> Entre em contato </a></p>
+        <p>&copy; 2026 Tempero de Ouro. Todos os direitos reservados.</p>
+        <p><a href="contato.html">Entre em contato</a></p>
     </footer>
 
+</body>
 </html>

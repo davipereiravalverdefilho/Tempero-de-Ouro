@@ -9,3 +9,8 @@ h1,h2,h3{
     color: rgba(156, 156, 6, 0.904);
     text-align: center;
 }
+
+p{
+    line-height: 1.6;
+    margin: 10px 0;
+}
