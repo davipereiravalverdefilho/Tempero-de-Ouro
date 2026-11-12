@@ -3,14 +3,80 @@ body{
     color: white;
     padding: 0;
     margin: 0;
+    padding-bottom: 120px;
 }
 
 h1,h2,h3{
-    color: rgba(156, 156, 6, 0.904);
+    color: rgba(243, 169, 10, 0.904);
     text-align: center;
 }
 
 p{
     line-height: 1.6;
     margin: 10px 0;
+    text-align: center;
 }
+
+.logo{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span{
+    color: goldenrod;
+}
+
+header{
+    background-color: rgb(80, 80, 80); color: gold; padding: 20px 0;
+}
+
+nav{
+    margin-top: 10px;
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 1 14px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: gold;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    background-color: rgb(80, 80, 80);
+    color: gold;
+}
+
+.sobre{
+     padding: 30px 20px; 
+     text-align: center;
+}
+
+.valores-lista{ 
+    list-style: none;
+    padding: 0;
+}
+
+.valores-lista li{
+     padding: 6px 0;
+     text-align: center;
+}
+
+#containerFormContato{
+    text-align: center;
+}
+
