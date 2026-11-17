@@ -1,4 +1,6 @@
-body{
+/* CONFIGURAÇÕES GERAIS */
+
+body {
     background-color: black;
     color: white;
     padding: 0;
@@ -28,9 +30,6 @@ p{
     color: goldenrod;
 }
 
-header{
-    background-color: rgb(80, 80, 80); color: gold; padding: 20px 0;
-}
 
 nav{
     margin-top: 10px;
@@ -80,3 +79,108 @@ footer{
     text-align: center;
 }
 
+/* ESTILO DO HEADER */
+header {
+    width: 100%;
+    min-height: 85px;
+    background-color: #111314;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    align-items: center;
+}
+
+/* PÁGINA INICIO*/
+
+main {
+    max-width: 1340px;
+    margin: 15px auto;
+}
+
+.restaurantes h1 {
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+}
+
+/* BLOCOS DOS RESTAURANTES */
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 100%;
+    min-height: 210px;
+    background-color: #222526;
+}
+
+/* IMAGENS */
+
+.home img {
+    width: 100%;
+    height: 100%;
+    min-height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+/* INFORMAÇÕES */
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    text-align: right;
+    padding: 30px;
+}
+
+.informacoes h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.informacoes span {
+    color: #d6a832;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.informacoes p {
+    max-width: 450px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.informacoes a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+
+    border: 1px solid #555;
+    padding: 12px 25px;
+    border-radius: 8px;
+}
+
+.informacoes a:hover {
+    background-color: #d6a832;
+    color: #17191a;
+}
+
+/* ALTERNÂNCIA DAS IMAGENS */
+
+.home:nth-of-type(even) img {
+    order: 2;
+}
