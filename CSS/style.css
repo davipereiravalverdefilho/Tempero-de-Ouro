@@ -30,35 +30,24 @@ p{
     color: goldenrod;
 }
 
+/* ESTILO DO FOOTER */
 
-nav{
-    margin-top: 10px;
-    text-align: center;
-}
-
-nav a{
-    color: white;
+footer a {
     text-decoration: none;
-    margin: 1 14px;
-    font-weight: bold;
-}
-
-nav a:hover{
-    color: gold;
-}
-
-footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
     text-align: center;
     padding: 20px;
     font-size: 14px;
-    background-color: rgb(80, 80, 80);
-    color: gold;
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; 
+
+    color: white;
+    
 }
+
+/* ----------------- */
 
 .sobre{
      padding: 30px 20px; 
@@ -80,24 +69,59 @@ footer{
 }
 
 /* ESTILO DO HEADER */
-header {
-    width: 100%;
-    min-height: 85px;
-    background-color: #111314;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-decoration: none;
-    padding: 20px;
-}
 
-header a {
+.logo{
     text-decoration: none;
     color: white;
     font-size: 24px;
     font-weight: bold;
-    align-items: center;
 }
+
+.logo span{
+    color: goldenrod;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+
+    background-color: rgb(80, 80, 80);
+    color: gold; 
+    
+    padding: 20px 0;
+}
+
+nav{
+    margin-top: 10px;
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 1 14px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: gold;
+}
+
+.menu{
+    display: flex;
+    gap: 10px;
+}
+
+.ativo{
+    color: rgb(199, 170, 6);
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* ----------------- */
+
 
 /* PÁGINA INICIO*/
 
@@ -122,7 +146,7 @@ main {
     min-height: 210px;
     background-color: #222526;
 }
-
+/* ----------------- */
 /* IMAGENS */
 
 .home img {
@@ -132,7 +156,7 @@ main {
     object-fit: cover;
     display: block;
 }
-
+/* ----------------- */
 /* INFORMAÇÕES */
 
 .informacoes {
@@ -179,8 +203,165 @@ main {
     color: #17191a;
 }
 
-/* ALTERNÂNCIA DAS IMAGENS */
-
 .home:nth-of-type(even) img {
     order: 2;
+}
+/* ----------------- */
+
+/* PÁGINA DE CONTATO */
+
+.contato {
+    width: 100%;
+    min-height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 20px;
+}
+
+/* FORMULÁRIO */
+
+.formulario {
+    width: 100%;
+    max-width: 650px;
+}
+
+.formulario h1 {
+    color: #D6A832;
+    font-size: 28px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.descricao {
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/* CAMPOS */
+
+.campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.campo label {
+    color: #888888;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.campo input, .campo select, .campo textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #333333;
+
+    padding: 12px 0;
+
+    color: white;
+    font-size: 15px;
+
+    outline: none;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+/* EFEITO AO CLICAR NOS CAMPOS */
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    border-bottom-color: #D6A832;
+}
+
+/* MENU DE SELEÇÃO */
+
+.campo select {
+    cursor: pointer;
+}
+
+.campo select option {
+    background-color: #222526;
+    color: white;
+}
+
+/* ÁREA DE MENSAGEM */
+
+.campo textarea {
+    height: 110px;
+    resize: vertical;
+}
+
+.campo textarea::placeholder, .campo input::placeholder {
+    color: #777777;
+}
+
+/* BOTÃO */
+
+.formulario button {
+    display: block;
+    margin-left: auto;
+
+    background-color: #D6A832;
+    color: #17191a;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 15px 35px;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #f0c75e;
+    transform: translateY(-2px);
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #111314;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 25px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    .campos {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .formulario h1 {
+        font-size: 24px;
+    }
+
+    .descricao {
+        font-size: 14px;
+    }
+
+    .contato {
+        padding: 35px 20px;
+    }
+
 }
